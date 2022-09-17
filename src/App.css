@@ -1,5 +1,11 @@
-.App {
-  text-align: center;
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  max-width: 80rem;
+  width: 100%;
 }
 
 .App-logo {
@@ -28,11 +34,147 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  color: #0290ff;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0290ff;
+}
+
+.userIcon {
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #0290ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookLists {
+  padding: 0;
+  list-style: none;
+}
+
+.bookLists li {
+  list-style: none;
+}
+
+.bookLists > li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px #e8e8e8;
+  padding: 15px 25px;
+  margin-bottom: 15px;
+}
+
+.list-action-btns {
+  display: flex;
+  padding: 0;
+  color: #0290ff;
+}
+
+.author {
+  color: #0290ff;
+}
+
+.title {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.list-action-btns li:not(:first-child) {
+  padding-left: 10px;
+}
+
+.list-action-btns li:not(:last-child) {
+  padding-right: 10px;
+}
+
+.chapter-section button {
+  background-color: #0290ff;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.chart {
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 5px solid #307bbe;
+  border-radius: 50%;
+}
+
+.right-div {
+  padding-left: 15px;
+}
+
+.right-div p:first-child {
+  font-size: 32px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.completion-status {
+  display: flex;
+  align-items: center;
+}
+
+h5 {
+  margin-bottom: 10px;
+}
+
+.addbook h3 {
+  color: #888;
+}
+
+.addbook input {
+  border: 1px solid #e8e8e8;
+  width: 30%;
+  padding-left: 15px;
+}
+
+.form-control {
+  height: 2.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control button {
+  background-color: #0290ff;
+  width: 12rem;
+  border: none;
+  color: #fff;
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cat button {
+  background-color: #0290ff;
+  padding: 15px 25px;
+  border: none;
+  margin-top: 30px;
+  color: #fff;
 }
