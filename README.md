@@ -1,7 +1,7 @@
 
 # Bookstore: initialize project with components
 
-## Bookstore: initialize project with components
+## Preview
 
 
 ## Built With (Linter)
