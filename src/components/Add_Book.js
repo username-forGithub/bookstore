@@ -22,7 +22,6 @@ const AddBook = () => {
     setCategory('');
     setTitle('');
   };
-
   const titleChange = (event) => setTitle(event.target.value);
   const authorChange = (event) => setAuthor(event.target.value);
   const categoryChange = (event) => setCategory(event.target.value);

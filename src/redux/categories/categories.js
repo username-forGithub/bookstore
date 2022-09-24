@@ -10,7 +10,6 @@ const reducerStatus = (state = initialState, action) => {
       return state;
   }
 };
-
 export const actionStatus = () => ({
   type: CHECK_STATUS,
 });

@@ -18,7 +18,6 @@ export const fetchBooksApi = createAsyncThunk(
     }
   },
 );
-
 export const postBookApi = createAsyncThunk(
   'postBooksApi',
   async (book) => {
