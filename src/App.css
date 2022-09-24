@@ -186,14 +186,14 @@ nav ul li a.active {
 
 .chart svg {
   width: 5rem;
-  height: 5rem;  
+  height: 5rem;
 }
 
 .text-blue-600 {
   color: #0290ff;
 }
 
-.text-gray-300 {  
+.text-gray-300 {
   color: rgb(209 213 219);
 }
 
