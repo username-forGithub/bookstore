@@ -1,5 +1,5 @@
 
-# Bookstore: Use Redux in React components.
+# Bookstore: connect to API
 
 ## Preview
 ![Screenshot_1](https://user-images.githubusercontent.com/104260002/192083664-8c54600f-ea7e-4cd7-9488-4c20d450bd79.jpg)
