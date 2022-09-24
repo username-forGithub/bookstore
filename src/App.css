@@ -178,3 +178,9 @@ hr {
   margin-top: 30px;
   color: #fff;
 }
+
+button.del {
+  background-color: transparent;
+  border: none;
+  color: #0290ff;
+}

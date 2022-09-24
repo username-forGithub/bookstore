@@ -1,11 +1,12 @@
 
-# Bookstore: initialize project with components
+# Bookstore: add reducers and actions
 
 ## Preview
 
 
 ## Built With (Linter)
 - React
+- Redux
 - JavaScript (Eslint)
 - CSS (Stylelint)
 
@@ -16,9 +17,9 @@ The following applications are required to be installed for the project to run!
 - [Git](https://git-scm.com/downloads)
 
 ## App Setup
-- Clone [this](https://github.com/username-forGithub/math_magicians_calc) GitHub repository using `git clone https://github.com/username-forGithub/math_magicians_calc`
-- Download all required modules using `npm install` inside the project directory (/math_magicians_calc)
-- Launch project on browser using `npm start` inside the project directory (/math_magicians_calc)
+- Clone [this](https://github.com/username-forGithub/bookstore) GitHub repository using `git clone https://github.com/username-forGithub/bookstore`
+- Download all required modules using `npm install` inside the project directory (/bookstore)
+- Launch project on browser using `npm start` inside the project directory (/bookstore)
   - This should launch the app on the browser
   - If the app is not opened immediately, then open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
@@ -33,7 +34,7 @@ App deployment is coming soon...
 
 ## 🤝 Contributing
 
-Contributions, [issues](https://github.com/username-forGithub/math_magicians_calc/issues), and feature requests are welcome!
+Contributions, [issues](https://github.com/username-forGithub/bookstore/issues), and feature requests are welcome!
 
 ## ⭐️ Show your support
 
