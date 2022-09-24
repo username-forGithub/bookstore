@@ -2,7 +2,7 @@
 # Bookstore: add reducers and actions
 
 ## Preview
-
+![Screenshot_1](https://user-images.githubusercontent.com/104260002/190851033-667031fb-2be7-471b-8747-08a2216aa44c.jpg)
 
 ## Built With (Linter)
 - React
