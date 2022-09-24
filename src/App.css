@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+
+/* font-family: 'Roboto Slab', serif; */
+
 body {
   display: flex;
   justify-content: center;
@@ -6,6 +13,7 @@ body {
 #root {
   max-width: 80rem;
   width: 100%;
+  padding-bottom: 50px;
 }
 
 .App-logo {
@@ -37,6 +45,7 @@ body {
 h1 {
   color: #0290ff;
   font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -55,7 +64,14 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #0290ff;
+  opacity: 0.5;
+  color: #121212;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a.active {
+  opacity: 1;
+  color: #121212;
 }
 
 .userIcon {
@@ -81,7 +97,8 @@ nav ul li a {
 .bookLists > li {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+
+  /* justify-content: space-between; */
   border: solid 1px #e8e8e8;
   padding: 15px 25px;
   margin-bottom: 15px;
@@ -91,23 +108,57 @@ nav ul li a {
   display: flex;
   padding: 0;
   color: #0290ff;
+  font-size: 0.875rem;
+  font-family: 'Roboto Slab', serif;
 }
 
 .author {
   color: #0290ff;
+  font-size: 0.875rem;
+  font-family: 'Roboto Slab', serif;
 }
 
 .title {
-  font-size: 20px;
   margin-top: 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.375rem;
+  color: #121212;
 }
 
 .list-action-btns li:not(:first-child) {
   padding-left: 10px;
+  border-left: 1px solid #dfdddd;
 }
 
 .list-action-btns li:not(:last-child) {
   padding-right: 10px;
+}
+
+.leftblock {
+  flex: 2 0 45%;
+}
+
+.completion-status {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex: 1 0 30%;
+}
+
+.chapter-section {
+  position: relative;
+  flex: 1 0 25%;
+}
+
+.chapter-section::before {
+  position: absolute;
+  content: "";
+  height: calc(50%);
+  top: 50%;
+  left: -30%;
+  transform: translateY(-50%);
+  width: 2px;
+  background-color: #dfdddd;
 }
 
 .chapter-section button {
@@ -115,28 +166,54 @@ nav ul li a {
   border: none;
   color: #fff;
   padding: 10px 15px;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-family: 'Roboto Slab', serif;
 }
 
-.chart {
-  width: 4.25rem;
-  height: 4.25rem;
-  border: 5px solid #307bbe;
-  border-radius: 50%;
+.chapter-section p:nth-child(1) {
+  font-size: 0.813rem;
+  color: #121212;
+  font-family: 'Roboto Slab', serif;
+}
+
+.chapter-section p:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #121212;
+  font-family: 'Roboto Slab', serif;
+}
+
+.chart svg {
+  width: 5rem;
+  height: 5rem;
+}
+
+.text-blue-600 {
+  color: #0290ff;
+}
+
+.text-gray-300 {
+  color: rgb(209 213 219);
 }
 
 .right-div {
   padding-left: 15px;
+  font-size: 0.875rem;
+  color: #121212;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .right-div p:first-child {
-  font-size: 32px;
   margin-bottom: 10px;
   margin-top: 10px;
+  font-size: 2rem;
+  color: #121212;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.completion-status {
-  display: flex;
-  align-items: center;
+.right-div p:nth-child(2) {
+  opacity: 0.5;
 }
 
 h5 {
@@ -145,6 +222,8 @@ h5 {
 
 .addbook h3 {
   color: #888;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .addbook input {
@@ -183,4 +262,35 @@ button.del {
   background-color: transparent;
   border: none;
   color: #0290ff;
+  font-size: 0.875rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+.bookLists h5 {
+  font-size: 0.875rem;
+  color: #121212;
+  font-family: 'Montserrat', sans-serif;
+}
+
+select {
+  padding-left: 15px;
+  padding-right: 25px;
+  border: 1px solid #e8e8e8;
+  appearance: none;
+  height: 100%;
+}
+
+.selectwrapper {
+  position: relative;
+}
+
+.selectwrapper::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: 9px;
+  border-top: 10px solid #ddd;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  pointer-events: none;
 }

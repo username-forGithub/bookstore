@@ -31,19 +31,21 @@ const AddBook = () => {
       <div className="form-control">
         <input onChange={titleChange} value={title} placeholder="Book title" />
         <input onChange={authorChange} value={author} placeholder="Author" />
-        <select
-          required
-          className="lg:w-2/6 shadow-sm"
-          id="categoryList"
-          value={category}
-          onChange={categoryChange}
-        >
-          <option>Select Category</option>
-          <option>Action</option>
-          <option>Fiction</option>
-          <option>Economy</option>
-          <option>Science Fiction</option>
-        </select>
+        <div className="selectwrapper">
+          <select
+            required
+            className="lg:w-2/6 shadow-sm"
+            id="categoryList"
+            value={category}
+            onChange={categoryChange}
+          >
+            <option>Select Category</option>
+            <option>Action</option>
+            <option>Fiction</option>
+            <option>Economy</option>
+            <option>Science Fiction</option>
+          </select>
+        </div>
         <button onClick={addNewBook} type="button">ADD BOOK</button>
       </div>
     </form>
