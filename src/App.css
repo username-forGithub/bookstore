@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
 
 /* font-family: 'Montserrat', sans-serif; */
+
 /* font-family: 'Roboto Slab', serif; */
 
 body {
@@ -44,7 +45,7 @@ body {
 h1 {
   color: #0290ff;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;  
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -96,6 +97,7 @@ nav ul li a.active {
 .bookLists > li {
   list-style: none;
   display: flex;
+
   /* justify-content: space-between; */
   border: solid 1px #e8e8e8;
   padding: 15px 25px;
@@ -107,17 +109,16 @@ nav ul li a.active {
   padding: 0;
   color: #0290ff;
   font-size: 0.875rem;
-  font-family: 'Roboto Slab', serif; 
+  font-family: 'Roboto Slab', serif;
 }
 
 .author {
   color: #0290ff;
   font-size: 0.875rem;
-  font-family: 'Roboto Slab', serif; 
+  font-family: 'Roboto Slab', serif;
 }
 
 .title {
-  font-size: 20px;
   margin-top: 0;
   font-family: 'Roboto Slab', serif;
   font-size: 1.375rem;
@@ -149,7 +150,7 @@ nav ul li a.active {
   flex: 1 0 25%;
 }
 
-.chapter-section:before {
+.chapter-section::before {
   position: absolute;
   content: "";
   height: calc(50%);
@@ -170,13 +171,13 @@ nav ul li a.active {
   font-family: 'Roboto Slab', serif;
 }
 
-.chapter-section p:nth-child(1){
+.chapter-section p:nth-child(1) {
   font-size: 0.813rem;
   color: #121212;
   font-family: 'Roboto Slab', serif;
 }
 
-.chapter-section p:nth-child(2){
+.chapter-section p:nth-child(2) {
   font-size: 1rem;
   font-weight: 300;
   color: #121212;
@@ -194,7 +195,7 @@ nav ul li a.active {
   padding-left: 15px;
   font-size: 0.875rem;
   color: #121212;
-  font-family: 'Montserrat', sans-serif;  
+  font-family: 'Montserrat', sans-serif;
 }
 
 .right-div p:first-child {
@@ -202,7 +203,7 @@ nav ul li a.active {
   margin-top: 10px;
   font-size: 2rem;
   color: #121212;
-  font-family: 'Montserrat', sans-serif; 
+  font-family: 'Montserrat', sans-serif;
 }
 
 .right-div p:nth-child(2) {
@@ -256,20 +257,20 @@ button.del {
   border: none;
   color: #0290ff;
   font-size: 0.875rem;
-  font-family: 'Roboto Slab', serif; 
+  font-family: 'Roboto Slab', serif;
 }
 
 .bookLists h5 {
   font-size: 0.875rem;
   color: #121212;
-  font-family: 'Montserrat', sans-serif;  
+  font-family: 'Montserrat', sans-serif;
 }
 
 select {
   padding-left: 15px;
   padding-right: 25px;
   border: 1px solid #e8e8e8;
-  appearance: none;  
+  appearance: none;
   height: 100%;
 }
 
@@ -277,11 +278,11 @@ select {
   position: relative;
 }
 
-.selectwrapper:after{
+.selectwrapper::after {
   content: "";
   position: absolute;
   top: 19px;
-  right: 9px;  
+  right: 9px;
   border-top: 10px solid #ddd;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
