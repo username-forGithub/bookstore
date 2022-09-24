@@ -184,11 +184,17 @@ nav ul li a.active {
   font-family: 'Roboto Slab', serif;
 }
 
-.chart {
-  width: 4.25rem;
-  height: 4.25rem;
-  border: 5px solid #307bbe;
-  border-radius: 50%;
+.chart svg {
+  width: 5rem;
+  height: 5rem;  
+}
+
+.text-blue-600 {
+  color: #0290ff;
+}
+
+.text-gray-300 {  
+  color: rgb(209 213 219);
 }
 
 .right-div {

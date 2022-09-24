@@ -40,7 +40,33 @@ const BookList = ({ bookList }) => {
               </ul>
             </div>
             <div className="completion-status">
-              <div className="chart" />
+              <div className="chart">
+                <svg className="circle">
+                  <circle
+                    className="text-gray-300"
+                    strokeWidth="5"
+                    strokeDasharray="200px;"
+                    strokeDashoffset="0"
+                    stroke="currentColor"
+                    fill="transparent"
+                    r="30"
+                    cx="40"
+                    cy="40"
+                  />
+                  <circle
+                    className="text-blue-600"
+                    strokeWidth="5"
+                    strokeDasharray="166px, 55px"
+                    strokeDashoffset="80px"
+                    strokeLinecap="round"
+                    stroke="currentColor"
+                    fill="transparent"
+                    r="30"
+                    cx="40"
+                    cy="40"
+                  />
+                </svg>
+              </div>
               <div className="right-div">
                 <p>64%</p>
                 <p>Completed</p>
