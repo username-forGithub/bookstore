@@ -20,7 +20,7 @@ const BookList = ({ bookList }) => {
         return (
 
           <li key={item_id}>
-            <div>
+            <div className="leftblock">
               <h5>{category}</h5>
               <p className="title">{title}</p>
               <p className="author">{author}</p>
