@@ -8,7 +8,6 @@ const Navbar = () => (
     <h1>Bookstore CMS</h1>
 
     <ul>
-
       <li key="1">
         <NavLink to="/">BOOKS</NavLink>
       </li>

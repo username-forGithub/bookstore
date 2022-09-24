@@ -52,10 +52,8 @@ const BookList = ({ bookList }) => {
               <button type="button">UPDATE PROGRESS</button>
             </div>
           </li>
-
         );
       })}
-
     </ul>
 
   );

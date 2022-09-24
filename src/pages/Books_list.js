@@ -7,7 +7,6 @@ import AddBook from '../components/Add_Book';
 const BooksList = () => {
   const booksObj = useSelector((state) => state.books);
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(fetchBooksApi());
   }, [booksObj.length, dispatch]);
